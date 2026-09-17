@@ -1,0 +1,11 @@
+| Layer        | Configuration                | Purpose                                        |
+| ------------ | ---------------------------- | ---------------------------------------------- |
+| Input        | (28, 28, 1)                  | Accepts a grayscale digit image                |
+| Conv2D       | 8 filters, 5×5 kernel, ReLU  | Learns simple visual patterns                  |
+| MaxPooling2D | 2×2                          | Reduces feature-map size                       |
+| Conv2D       | 16 filters, 5×5 kernel, ReLU | Learns more complex digit features             |
+| MaxPooling2D | 2×2                          | Further downsamples learned features           |
+| Flatten      | —                            | Converts 3D features to a 1D vector            |
+| Dense        | 128 units, ReLU              | Combines extracted features for classification |
+| Dropout      | 20%                          | Reduces overfitting                            |
+| Dense        | 10 units, Softmax            | Outputs one probability per digit              |
