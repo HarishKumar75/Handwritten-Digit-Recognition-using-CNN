@@ -4,10 +4,3 @@ A Convolutional Neural Network trained on the MNIST dataset (60,000 training ima
 
 Stack: TensorFlow / Keras, NumPy, Matplotlib, OpenCV, scikit-learn
 
-Project Structure
-mnist_cnn_project/
-├── train_model.py      # Builds, trains, evaluates, and saves the CNN
-├── predict.py           # Loads the saved model and predicts on new images
-├── requirements.txt
-├── outputs/              # Generated plots (created automatically)
-└── mnist_cnn_model.keras # Saved model (created after training)
